@@ -11,3 +11,4 @@ screenshot-*.png
 
 # Node (if added later)
 node_modules/
+.vercel
