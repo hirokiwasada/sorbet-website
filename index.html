@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社sorbet — 広告を売るのではなく、事業を伸ばす。</title>
-  <meta name="description" content="株式会社sorbetは、事業KPI設計から実行・検証まで一気通貫で行う次世代マーケティングファームです。事業マネジメント・SNS×PRバズマーケティング・AI活用クリエイティブで、事業成長に直結するマーケティングを提供します。">
+  <meta name="description" content="株式会社sorbetは、事業KPIの設計から実行・検証まで一気通貫でマネジメントする次世代マーケティングファームです。広告ではなく、事業を伸ばす。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sorbet-tokyo.com/">
 
@@ -26,8 +26,17 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/site.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+    }
+  }
+  </script>
 
   <script type="application/ld+json">
   {
@@ -65,7 +74,7 @@
       <div class="nav__menu" id="navMenu">
         <a href="#mission">Mission</a>
         <a href="#strengths">Strengths</a>
-        <a href="#services">Services</a>
+        <a href="#services">Capabilities</a>
         <a href="#leadership">Leadership</a>
         <a href="#company">Company</a>
         <a href="#contact" class="nav__cta">Contact</a>
@@ -78,33 +87,37 @@
     <div class="hero__aurora" aria-hidden="true"><span></span></div>
     <div class="hero__inner">
       <div class="hero__logo">
-        <img src="/assets/logo-sorbet-480.png" alt="sorbet logo">
+        <div id="heroSphere" class="hero__logo-canvas" aria-hidden="true"></div>
+        <img class="hero__logo-fallback" src="/assets/logo-sorbet-480.png" alt="sorbet logo">
       </div>
+      <p class="hero__eyebrow">A Next-Generation Marketing Firm</p>
       <h1 class="hero__tagline" id="heroTagline">
-        <span class="word"><span>広告を売るのではなく、</span></span><br>
-        <span class="word"><span><em>事業を伸ばす。</em></span></span>
+        <span class="word"><span>広告を、売らない。</span></span><br>
+        <span class="word"><span><em>事業を、伸ばす。</em></span></span>
       </h1>
       <p class="hero__sub">
-        株式会社sorbet は、事業KPIの設計から実行・検証までを<br>
-        一気通貫でマネジメントする次世代マーケティングファームです。
+        Marketing that moves business KPIs.<br>
+        sorbetは、事業KPIの設計から実行・検証までを<br>一気通貫でマネジメントする、次世代マーケティングファームです。
       </p>
     </div>
-    <div class="hero__scroll">SCROLL</div>
+    <div class="hero__scroll" aria-hidden="true"><span>SCROLL</span></div>
   </section>
 
   <!-- ============ MISSION ============ -->
   <section class="mission" id="mission">
-    <div class="section__bg-orb section__bg-orb--right"></div>
+    <div class="mission__bg" aria-hidden="true">
+      <img src="/assets/mission-droplets.jpg" alt="">
+    </div>
     <div class="container">
       <span class="section__lead reveal">MISSION</span>
       <h2 class="mission__statement reveal">
-        広告を売るのではなく、<br><em>事業を伸ばす。</em>
+        マーケティングは、<br><em>事業を伸ばすためにある。</em>
       </h2>
       <div class="mission__lead-line reveal"></div>
       <p class="mission__body reveal">
-        マーケティングの目的は、認知でもクリック数でもない。事業を、確かに伸ばすことだ。<br>
-        sorbetは、事業KPIの起点に立ち戻り、設計・実行・検証を一気通貫でマネジメントする。<br>
-        広告を売るプレイヤーではなく、事業を伸ばすパートナーであり続ける。
+        私たちは、認知でもクリックでもなく、売上・利益・LTVといった<br>
+        事業KPIの起点に立ち戻る。<br>
+        広告を売るプレイヤーではなく、事業を伸ばすパートナーとして。
       </p>
     </div>
   </section>
@@ -113,30 +126,30 @@
   <section class="problem" id="problem">
     <div class="container">
       <span class="section__lead reveal">CHALLENGE</span>
-      <h2 class="section__title reveal">従来のマーケティングモデルの限界</h2>
+      <h2 class="section__title reveal">マーケティングは、事業を伸ばしているか。</h2>
       <p class="section__sub reveal">
-        多くの企業が抱える3つの構造的な課題に、sorbetは正面から向き合います。
+        多くの企業が、構造的な3つの問いに直面しています。
       </p>
       <div class="cards-3 reveal reveal--stagger">
         <div class="card">
-          <span class="card__tag">Issue 01</span>
-          <h3 class="card__title">事業成果との断絶</h3>
+          <span class="card__tag">01</span>
+          <h3 class="card__title">事業との、断絶。</h3>
           <p class="card__body">
-            広告のCPAやインプレッションは最適化されるが、売上・利益といった事業KPIとの接続が弱い。マーケティング活動が事業成長に貢献しているか、見えにくい。
+            CPAとインプレッションは最適化されている。けれど、その先で売上は本当に動いているのか。広告の指標と事業の指標が、どこかで切れてしまっている。
           </p>
         </div>
         <div class="card">
-          <span class="card__tag">Issue 02</span>
-          <h3 class="card__title">中間マージンの肥大化</h3>
+          <span class="card__tag">02</span>
+          <h3 class="card__title">中間マージンの、肥大。</h3>
           <p class="card__body">
-            代理店・制作会社・下請けと多層化したマージン構造により、企業が支払うコストの多くが実制作以外に消費されている。投資効率が下がる。
+            代理店から制作、下請けへ。多層化したマージン構造が、企業が支払う予算の大半を実制作の外側に流出させている。
           </p>
         </div>
         <div class="card">
-          <span class="card__tag">Issue 03</span>
-          <h3 class="card__title">マスメディア依存の体質</h3>
+          <span class="card__tag">03</span>
+          <h3 class="card__title">マスメディアへの、依存。</h3>
           <p class="card__body">
-            ブランド認知をTVCMに依存し、巨額の予算が必要となる。SNS・PR時代の情報接触の変化に最適化されたモデルになっていない。
+            ブランドの認知を、いまもTVCMが決めている。SNSとPRが情報接触の主戦場になった時代に、その構造は最適だろうか。
           </p>
         </div>
       </div>
@@ -147,30 +160,30 @@
   <section class="solution" id="solution">
     <div class="container">
       <span class="section__lead reveal">APPROACH</span>
-      <h2 class="section__title reveal">sorbetの解</h2>
+      <h2 class="section__title reveal">事業から、逆算する。</h2>
       <p class="section__sub reveal">
-        事業KPIを起点にしたマーケティング設計と、自社内製×AIによる実行体制で、本質的な成果に直結させます。
+        マーケティングを、事業の言語で再設計する。それがsorbetの解です。
       </p>
       <div class="cards-3 reveal reveal--stagger">
         <div class="card">
-          <span class="card__tag">Approach 01</span>
-          <h3 class="card__title">事業マネジメント</h3>
+          <span class="card__tag">01</span>
+          <h3 class="card__title">事業を、<br>マネジメントする。</h3>
           <p class="card__body">
-            事業KPI設計・調査設計から入り、ビジネスドライバーを特定。マーケティング活動を事業成長に直結させ、施策の意思決定を経営の言語で行う。
+            事業KPIの設計、調査、ドライバー特定から入る。マーケティングを、経営の意思決定と同じ言語にする。
           </p>
         </div>
         <div class="card">
-          <span class="card__tag">Approach 02</span>
-          <h3 class="card__title">ニュースを作る<br>バズマーケティング</h3>
+          <span class="card__tag">02</span>
+          <h3 class="card__title">ニュースを、<br>つくる。</h3>
           <p class="card__body">
-            SNS×PRで「事件」を仕掛け、メディアが取り上げたくなる話題を設計。生活者の話題に乗ることで、認知を効率的に獲得する。
+            広告で届けるのではなく、話題として広がる設計。SNSとPRで「事件」を仕掛け、メディアと生活者を同時に動かす。
           </p>
         </div>
         <div class="card">
-          <span class="card__tag">Approach 03</span>
-          <h3 class="card__title">AI活用 × 内製</h3>
+          <span class="card__tag">03</span>
+          <h3 class="card__title">AIで、<br>自社化する。</h3>
           <p class="card__body">
-            AIを駆使したクリエイティブ制作とメディアプランニング。中間マージンを排除し、企業の予算を本来の価値創出に集中させる。
+            クリエイティブとメディアプランをAIと内製チームで動かす。中間マージンを排し、予算を本来の価値創出に集中させる。
           </p>
         </div>
       </div>
@@ -179,54 +192,56 @@
 
   <!-- ============ STRENGTHS ============ -->
   <section class="strengths" id="strengths">
-    <div class="section__bg-orb section__bg-orb--left"></div>
+    <div class="strengths__bg" aria-hidden="true">
+      <img src="/assets/strengths-flow.jpg" alt="">
+    </div>
     <div class="container">
       <span class="section__lead reveal">STRENGTHS</span>
-      <h2 class="section__title reveal">4つの強み</h2>
+      <h2 class="section__title reveal">強みは、四つ。</h2>
       <p class="section__sub reveal">
-        戦略・実行・体制の各レイヤーで、代理店モデルにはない独自の強みを持っています。
+        戦略・実行・体制の各レイヤーで、代理店モデルにはない独自の力学を持っています。
       </p>
       <div class="strengths__grid reveal reveal--stagger">
         <div class="strength">
           <div class="strength__num">01</div>
           <div class="strength__body">
-            <h3 class="strength__title">事業KPI設計</h3>
+            <h3 class="strength__title">事業KPIから、設計する。</h3>
             <p class="strength__text">
-              認知率・好意度といった広告指標ではなく、売上・LTV・コンバージョンといった事業KPIから逆算する。マーケティングを経営の意思決定と接続する。
+              認知率や好意度ではなく、売上・LTV・コンバージョンから逆算する。マーケティングを、経営の意思決定と接続する。
             </p>
           </div>
         </div>
         <div class="strength">
           <div class="strength__num">02</div>
           <div class="strength__body">
-            <h3 class="strength__title">デジタル × リアル統合</h3>
+            <h3 class="strength__title">デジタルとリアルを、統合する。</h3>
             <p class="strength__text">
-              SNS・Web広告・PR・店頭・体験まで、生活者のあらゆる接点を統合的に設計。チャネル間の相乗効果を最大化する。
+              SNS・Web広告・PR・店頭・体験まで、生活者のあらゆる接点を一つのシナリオにまとめる。チャネルを越えた相乗を最大化する。
             </p>
           </div>
         </div>
         <div class="strength">
           <div class="strength__num">03</div>
           <div class="strength__body">
-            <h3 class="strength__title">SNS × PR バズ創出</h3>
+            <h3 class="strength__title">ニュースになるアイデアを、設計する。</h3>
             <p class="strength__text">
-              「広告として届ける」のではなく「話題として広がる」設計。生活者の心を動かす"事件性"のあるアイデアを起点に、メディア露出と二次拡散を獲得する。
+              「広告として届ける」のではなく「話題として広がる」設計。事件性のある発想を起点に、メディア露出と二次拡散を同時に獲得する。
             </p>
           </div>
         </div>
         <div class="strength">
           <div class="strength__num">04</div>
           <div class="strength__body">
-            <h3 class="strength__title">AI活用 × 中間マージン排除</h3>
+            <h3 class="strength__title">AIと内製で、価値を集中させる。</h3>
             <p class="strength__text">
-              クリエイティブ制作・メディアプランニングをAIと自社チームで内製化。多層化した代理店構造を排し、企業の予算を本質的な価値創出に集中させる。
+              クリエイティブとメディアプランをAIと自社チームで運用する。多層化した代理店構造を排し、予算を本質的な価値創出へ集中させる。
             </p>
           </div>
         </div>
       </div>
       <div class="note-box reveal">
-        <strong>なぜsorbetなのか。</strong>
-        広告代理店は「広告予算を消化する」ことが事業構造上の役割になりがちです。sorbetは事業マネジメントから入り、KPIの起点に立ち戻ることで、必要な施策を必要な分だけ実行する。代理店との最大の違いは、「事業を伸ばすこと」が成果の定義であることです。
+        <strong>Why sorbet.</strong>
+        広告代理店は、構造上「広告予算を消化する」ことが役割になりがちです。sorbetは事業マネジメントから入り、KPIの起点に立ち戻ることで、必要な施策を必要な分だけ実行する。違いは、「事業を伸ばすこと」を成果の定義に据えていることです。
       </div>
     </div>
   </section>
@@ -234,10 +249,10 @@
   <!-- ============ SERVICES ============ -->
   <section class="services" id="services">
     <div class="container">
-      <span class="section__lead reveal">SERVICES</span>
-      <h2 class="section__title reveal">サービスメニュー</h2>
+      <span class="section__lead reveal">CAPABILITIES</span>
+      <h2 class="section__title reveal">私たちが、提供できること。</h2>
       <p class="section__sub reveal">
-        戦略策定から実行・運用まで、4つの領域で事業成長に伴走します。
+        戦略策定から実行・運用まで、四つの領域で事業成長に伴走します。
       </p>
       <div class="services__grid reveal reveal--stagger">
         <div class="service">
@@ -286,11 +301,14 @@
 
   <!-- ============ PROCESS ============ -->
   <section class="process" id="process">
+    <div class="process__bg" aria-hidden="true">
+      <img src="/assets/process-flow.jpg" alt="">
+    </div>
     <div class="container">
       <span class="section__lead reveal">PROCESS</span>
-      <h2 class="section__title reveal">プロジェクトの進め方</h2>
+      <h2 class="section__title reveal">私たちの、進め方。</h2>
       <p class="section__sub reveal">
-        事業診断から施策実行・検証まで、4つのフェーズで進行します。
+        事業診断から実行・検証まで、四つのフェーズで進行します。
       </p>
       <div class="process__flow reveal reveal--stagger">
         <div class="phase">
@@ -301,7 +319,7 @@
         <div class="phase">
           <div class="phase__num">PHASE 02</div>
           <h3 class="phase__title">戦略設計</h3>
-          <p class="phase__body">事業KPIに直結する戦略・KGI/KPIを設計。実行計画とロードマップに落とし込む。</p>
+          <p class="phase__body">事業KPIに直結する戦略・KGI/KPIを設計。実行計画とロードマップに落とす。</p>
         </div>
         <div class="phase">
           <div class="phase__num">PHASE 03</div>
@@ -321,17 +339,17 @@
   <section class="group" id="group">
     <div class="container">
       <div class="group__inner">
-        <span class="section__lead reveal">GROUP</span>
-        <h2 class="section__title reveal">グループ制作力</h2>
+        <span class="section__lead reveal">COLLECTIVE</span>
+        <h2 class="section__title reveal">戦略から制作まで、一気通貫で。</h2>
         <p class="group__copy reveal">
-          sorbetは戦略設計から制作・実行まで、グループ体制でワンストップに伴走します。マーケティング戦略・調査・KPI設計はsorbetが担い、空間・体験・映像・グラフィックなどクリエイティブ実装はグループのクリエイティブカンパニーが連携。「戦略から制作まで一気通貫」という、代理店の発注・下請けモデルとは異なる体制で、事業成果に直結するアウトプットを生み出します。
+          sorbetは戦略設計から制作・実行までを、グループ体制でワンストップに伴走します。マーケティング戦略・調査・KPI設計はsorbetが担い、空間・体験・映像・グラフィックなどクリエイティブ実装はグループのクリエイティブカンパニーが連携。「戦略から制作まで一気通貫」という、代理店の発注・下請けモデルとは異なる体制で、事業成果に直結するアウトプットを生み出します。
         </p>
         <div class="group__pillars reveal reveal--stagger">
           <div class="pillar">
             <span class="pillar__label">STRATEGY</span>
             <h3 class="pillar__title">戦略・マーケティング</h3>
             <p class="pillar__body">
-              事業KPI設計、調査、ブランド戦略、メディアプラン、PR設計、運用まで。事業成果から逆算したマーケティング機能を提供。
+              事業KPI設計、調査、ブランド戦略、メディアプラン、PR設計、運用まで。事業成果から逆算した機能を提供。
             </p>
           </div>
           <div class="pillar">
@@ -348,17 +366,15 @@
 
   <!-- ============ LEADERSHIP ============ -->
   <section class="leadership" id="leadership">
-    <div class="section__bg-orb section__bg-orb--right"></div>
     <div class="container">
       <span class="section__lead reveal">LEADERSHIP</span>
-      <h2 class="section__title reveal">代表プロフィール</h2>
+      <h2 class="section__title reveal">代表 早田 裕樹</h2>
       <div class="leadership__grid">
         <div class="leadership__photo reveal">
           <img src="/assets/leadership-hayata.jpg" alt="代表 早田裕樹">
         </div>
         <div class="leadership__info reveal">
-          <div class="leadership__name">REPRESENTATIVE</div>
-          <h3 class="leadership__title">早田 裕樹</h3>
+          <div class="leadership__name">REPRESENTATIVE / FOUNDER</div>
           <p class="leadership__edu">慶應義塾大学卒業</p>
 
           <div class="career">
@@ -391,9 +407,9 @@
   <section class="industries" id="industries">
     <div class="container">
       <span class="section__lead reveal">INDUSTRIES</span>
-      <h2 class="section__title center reveal">過去支援領域</h2>
+      <h2 class="section__title center reveal">これまで、ともに歩んできた領域。</h2>
       <p class="section__sub center reveal">
-        さまざまな業界の事業課題に向き合ってきました。
+        多様な業界の事業課題に向き合ってきました。
       </p>
       <div class="industries__tags reveal reveal--stagger">
         <span class="tag">外食</span>
@@ -413,11 +429,14 @@
 
   <!-- ============ CLOSING ============ -->
   <section class="closing">
+    <div class="closing__bg" aria-hidden="true">
+      <img src="/assets/closing-sky.jpg" alt="">
+    </div>
     <div class="container">
       <h2 class="closing__title reveal">
-        ニュースを、作る。<br><em>事業を、動かす。</em>
+        ニュースを、つくる。<br><em>事業を、動かす。</em>
       </h2>
-      <p class="closing__sub reveal">事業の伸びしろについて、お聞かせください。</p>
+      <p class="closing__sub reveal">Marketing built for outcomes.</p>
       <a href="#contact" class="btn reveal">お問い合わせ</a>
     </div>
   </section>
@@ -451,7 +470,7 @@
     <div class="container">
       <div class="contact__inner">
         <span class="section__lead reveal">CONTACT</span>
-        <h2 class="section__title center reveal">お問い合わせ</h2>
+        <h2 class="section__title center reveal">Let's talk.</h2>
         <p class="contact__lead reveal">
           ご相談・お見積もり・パートナーシップのご提案など、<br>
           下記メールアドレスまでお気軽にご連絡ください。
@@ -465,10 +484,11 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__copy">© 2026 sorbet, Inc.</div>
-      <div class="footer__copy">Next-generation Marketing Firm</div>
+      <div class="footer__copy">A Next-Generation Marketing Firm</div>
     </div>
   </footer>
 
   <script src="/js/site.js"></script>
+  <script type="module" src="/js/sphere.js"></script>
 </body>
 </html>

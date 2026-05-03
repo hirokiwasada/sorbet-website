@@ -1,6 +1,9 @@
 # Local screenshots (not part of the site)
 screenshot-*.png
 
+# Raw MJ exports (the processed jpg variants are checked in)
+assets/mj-raw/
+
 # OS / Editor
 .DS_Store
 .vscode/
