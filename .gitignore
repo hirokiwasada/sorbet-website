@@ -1,0 +1,13 @@
+# Local screenshots (not part of the site)
+screenshot-*.png
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local server logs
+*.log
+
+# Node (if added later)
+node_modules/
