@@ -115,7 +115,8 @@
   scene.add(halo);
 
   // ----- Orbiting particle field -----
-  const particleCount = 220;
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const particleCount = isMobile ? 80 : 220;
   const positions = new Float32Array(particleCount * 3);
   const velocities = new Float32Array(particleCount * 3);
   for (let i = 0; i < particleCount; i++) {
