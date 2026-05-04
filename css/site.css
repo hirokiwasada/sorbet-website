@@ -98,7 +98,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   max-width: var(--max-w);
   height: 100%;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
   display: flex; align-items: center; justify-content: space-between;
 }
 .nav__logo {
@@ -127,10 +127,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 .nav__cta {
   background: var(--dusk);
   color: var(--white) !important;
-  padding: 10px 22px;
+  padding: 12px 32px;
   border-radius: 999px;
   font-size: 13px;
-  letter-spacing: .08em;
+  letter-spacing: .18em;
+  margin-left: 12px;
   transition: background .25s var(--ease), transform .25s var(--ease);
 }
 .nav__cta:hover { background: var(--slate); color: var(--white) !important; transform: translateY(-1px); }
