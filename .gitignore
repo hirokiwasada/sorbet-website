@@ -1,6 +1,7 @@
 # Local screenshots (not part of the site)
 screenshot-*.png
 audit-*.png
+v5-*.png
 
 # Raw MJ exports (the processed jpg variants are checked in)
 assets/mj-raw/
